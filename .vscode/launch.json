@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FirefoxBrowserTest",
+            "request": "launch",
+            "mainClass": "com.selenium.FirefoxBrowserTest",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ChromeBrowserTest",
+            "request": "launch",
+            "mainClass": "com.selenium.ChromeBrowserTest",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - BrowserTest",
             "request": "launch",
             "mainClass": "com.selenium.BrowserTest",
