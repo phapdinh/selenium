@@ -9,6 +9,7 @@ public class IEBrowserTest extends BrowserTest {
         System.setProperty("webdriver.ie.driver", projectPath + "/drivers/iedriver/IEDriverServer.exe");
         WebDriver driver = new InternetExplorerDriver();
 
-        test(driver);
+        portfolioTest(driver);
+        googleTest(driver);
     }
 }

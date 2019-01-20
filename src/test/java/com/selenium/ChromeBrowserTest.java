@@ -9,6 +9,7 @@ public class ChromeBrowserTest extends BrowserTest {
         System.setProperty("webdriver.chrome.driver", projectPath + "/drivers/chromedriver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        test(driver);
+        portfolioTest(driver);
+        googleTest(driver);
     }
 }

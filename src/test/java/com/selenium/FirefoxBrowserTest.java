@@ -9,6 +9,7 @@ public class FirefoxBrowserTest extends BrowserTest {
         System.setProperty("webdriver.gecko.driver", projectPath + "/drivers/geckodriver/geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
 
-        test(driver);
+        portfolioTest(driver);
+        googleTest(driver);
     }
 }
