@@ -1,5 +1,7 @@
 package com.selenium;
 
+import static org.junit.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +13,9 @@ class BrowserTest {
         int[] projectIds = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         driver.get(url);
 
+        String title = driver.getTitle();
+        System.out.println("title is " + title);
+        assertEquals(title, "Portfolio");
         for(int id : projectIds) {
             driver.findElement(By.xpath(String.format("//*[@data-target='#project%d']", id))).click();
             Thread.sleep(2000);
