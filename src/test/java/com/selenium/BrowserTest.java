@@ -16,6 +16,11 @@ class BrowserTest {
         String title = driver.getTitle();
         System.out.println("title is " + title);
         assertEquals(title, "Portfolio");
+        String text = driver.findElement(By.cssSelector(
+                "body:nth-child(2) div.container:nth-child(1) div.row:nth-child(1) div.col-md-6.text-right.text-uppercase:nth-child(2) > h4:nth-child(2)"))
+                .getText();
+        System.out.println("text is " + text);
+        assertEquals("FRONT-END NINJA", text);
         for(int id : projectIds) {
             driver.findElement(By.xpath(String.format("//*[@data-target='#project%d']", id))).click();
             Thread.sleep(2000);
